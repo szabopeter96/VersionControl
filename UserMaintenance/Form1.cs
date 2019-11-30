@@ -34,7 +34,7 @@ namespace UserMaintenance
         {
             var u = new User()
             {
-                FullName = txtFullName.Text,
+                FullName = txtFullName.Text, //hozzáadás
                 
             };
             users.Add(u);
@@ -58,6 +58,10 @@ namespace UserMaintenance
             }
         }
 
-      
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            var torol = (User)listUsers.SelectedItem;
+            users.Remove(torol);
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.lblFullName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnWriting = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -79,11 +80,22 @@
             this.btnWriting.UseVisualStyleBackColor = true;
             this.btnWriting.Click += new System.EventHandler(this.btnWriting_Click);
             // 
+            // btndelete
+            // 
+            this.btndelete.Location = new System.Drawing.Point(422, 204);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(75, 23);
+            this.btndelete.TabIndex = 7;
+            this.btndelete.Text = "button1";
+            this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnWriting);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblFullName);
@@ -103,6 +115,7 @@
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnWriting;
+        private System.Windows.Forms.Button btndelete;
     }
 }
 
